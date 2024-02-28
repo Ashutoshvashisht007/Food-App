@@ -12,3 +12,8 @@ export type RequestUserBody = {
     email: string;
     password: string;
 }
+
+export type RequestUserLoginBody = {
+    email: string;
+    password: string;
+}

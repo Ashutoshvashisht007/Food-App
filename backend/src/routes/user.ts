@@ -4,6 +4,6 @@ import { getUser, newUser } from "../controllers/user.js";
 const app = express.Router();
 
 app.post("/new",newUser);
-app.get("/sigin",getUser);
+app.get("/login",getUser);
 
 export default app;
