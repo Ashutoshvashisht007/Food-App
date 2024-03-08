@@ -4,6 +4,7 @@ import cors from "cors";
 import { connectDB } from "./utils/features.js";
 
 import userRoute from "./routes/user.js";
+import descRoute from "./routes/desc.js";
 
 config({
     path: "./.env"
@@ -22,6 +23,7 @@ app.get("/",(req,res) => {
 });
 
 app.use("/api/v1/user",userRoute);
+app.use("/api/v1/description",descRoute);
 
 app.listen(3000, () => {
     console.log("Server is Working at local host 3000");

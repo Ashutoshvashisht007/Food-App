@@ -17,3 +17,10 @@ export type RequestUserLoginBody = {
     email: string;
     password: string;
 }
+
+export type RequestFoodDescBody = {
+    img: string;
+    title: string;
+    desc: string;
+    recipe: string;
+}
