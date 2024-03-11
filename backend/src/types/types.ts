@@ -24,3 +24,7 @@ export type RequestFoodDescBody = {
     desc: string;
     recipe: string;
 }
+
+export type SearchDescQuery = {
+    search?: string;
+}
